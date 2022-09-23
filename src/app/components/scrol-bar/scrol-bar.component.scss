@@ -1,0 +1,27 @@
+//  style des barre a gauche et logo sociaux
+.scroll {
+  .left-bar {
+    height: 425px;
+    border: 2px solid #9e91b7;
+    position: absolute;
+    left: 30px;
+    top: 0;
+  }
+  .mini-left-bar {
+    @extend .left-bar;
+    height: 290px;
+    left: 60px;
+  }
+  .logo-socio {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: 52px;
+    img {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}

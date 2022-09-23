@@ -1,0 +1,13 @@
+h1,
+h6 {
+  color: white;
+}
+.btn {
+  color: black;
+  border: none;
+  background-color: #f2cef2;
+  &:hover {
+    background-color: #ea6fea;
+    color: white;
+  }
+}

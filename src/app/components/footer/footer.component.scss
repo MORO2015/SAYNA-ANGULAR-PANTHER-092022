@@ -1,0 +1,66 @@
+footer {
+  color: white;
+  padding: 50px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(61, 45, 166, 1) 20%,
+    rgba(2, 23, 64, 1) 45%
+  );
+  background-position: center;
+  background-size: auto;
+  .pied-page {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .left-image {
+      background-image: url(../../../assets/images/Icônes/footer1.png);
+      background-size: 100px cover;
+      background-repeat: no-repeat;
+      height: 400px;
+      width: 400px;
+      img {
+        position: relative;
+        width: 40%;
+        left: -40px;
+        top: 155px;
+      }
+    }
+    .card-right {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      .card-social {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+      }
+    }
+  }
+  .page {
+    .titre-socio {
+      font-size: 18;
+      font-weight: bold;
+    }
+    .texte {
+      margin: 10px;
+      font-family: "cantarel";
+      font-size: 16px;
+    }
+  }
+  .logo-socio {
+    .titre-socio {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .image-logo {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .texte-fin {
+    margin-top: 100px;
+    font-size: 16px;
+  }
+}

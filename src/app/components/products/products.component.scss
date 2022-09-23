@@ -1,0 +1,24 @@
+.resultats {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.card {
+  background-color: black;
+}
+.card-body {
+  background-color: black;
+  .card-title {
+    font-weight: bolder;
+  }
+  .price {
+    font-weight: bolder;
+  }
+}
+.btn {
+  background-color: #f2cef2;
+  font-weight: bolder;
+  color: rgb(21, 5, 36);
+  &:hover {
+    background-color: #f187f1;
+  }
+}

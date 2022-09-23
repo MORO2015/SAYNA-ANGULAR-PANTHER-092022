@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+// definition des typographie
+@font-face {
+  font-family: "panthera";
+  src: url("./assets/police/panthera.otf");
+}
+@font-face {
+  font-family: "beyno";
+  src: url("./assets/police/BEYNO.otf");
+}
+@font-face {
+  font-family: "cantarel";
+  src: url("./assets/police/Cantarell-Regular.ttf");
+}
+@font-face {
+  font-family: "wakanda";
+  src: url("./assets/police/WakandaForever-Regular.ttf");
+}
+
+// Definition des couleurs
+$white: #ffffff;
+$black: #000000;
+$light-pink: #f2cef2;
+$pink: #df99f2;
+$graye: #9e91b7;
+$purple-primary: #3d2da6;
+$blue: #07338c;
+$blue-dark: #021740;
+
+// Definition des typographie
+.titre-panther {
+  font-family: "panthera", "sans seirf";
+  font-size: 50px;
+  color: $graye;
+}
+
+.sous-titre-beyno {
+  font-family: "beyno", "sans serif";
+  font-size: 22px;
+  color: $graye;
+}
+.titre-beyno {
+  font-family: "beyno", "sans serif";
+  font-size: 40px;
+  color: $graye;
+}
+
+.titre-wakanda {
+  font-family: "wakanda", "sans serif";
+  font-size: 50px;
+  color: $graye;
+}
+.sous-titre-wakanda {
+  font-family: "wakanda", "sans serif";
+  font-size: 30px;
+  color: $graye;
+}
+.texte {
+  font-family: "cantarel", "sans serif";
+  font-size: 16px;
+}
+
+.titre-nom {
+  font-family: "cantarel", "sans serif";
+  font-weight: bold;
+  font-size: 40px;
+}
+// initialisation de la page
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(
+    126.67% 350.28% at -21.35% 0%,
+    #11213f 0%,
+    #0b0b0b 39.1%,
+    rgba(2, 23, 64, 0.837641) 94.57%,
+    rgba(2, 23, 64, 0) 100%
+  );
+
+  font-family: "cantarel", "sans serif";
+  font-size: 16px;
+  color: $white;
+}
+// police des liens de li
+li {
+  font-family: "beyno";
+}
+//  les lien de type a:href voir plus
+.voir-plus {
+  color: $white;
+}
