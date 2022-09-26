@@ -1,23 +1,28 @@
 <h1>Produits</h1>
 <div class="resultats mt-5 d-flex justify-content-between">
-  <p>Résultats: <span class="mx-2">122</span></p>
+  <p>
+    Résultats: <span class="mx-2">{{ produts.length }}</span>
+  </p>
   <p class="trier">Trier par <i class="fa-solid fa-chevron-down"></i></p>
 </div>
 <div class="products row">
-  <div class="col-md-4 my-3">
-    <div class="card bg-ligth" style="width: 18rem">
-      <img
-        class="card-img-top"
-        src="../../../assets/images/eshop/article_1.jpg"
-        alt="Card image cap"
-      />
-      <div class="card-body text-center">
-        <div class="card-title">{{ title | uppercase }}</div>
-        <div class="price">{{ price }}$</div>
+  <ng-container *ngFor="let productItem of produts">
+    <div class="col-md-4 my-3">
+      <div class="card bg-ligth" style="width: 18rem">
+        <img
+          height="300px"
+          class="card-img-top"
+          [src]="productItem.imageUrl"
+          alt="Card image cap"
+        />
+        <div class="card-body text-center">
+          <div class="card-title">{{ productItem.name }}</div>
+          <div class="price">{{ productItem.Prix | currency: "$" }}</div>
+        </div>
+        <button type="button" class="btn" ng-click="click()">
+          Ajouter au panier
+        </button>
       </div>
-      <button type="button" class="btn" ng-click="click()">
-        Ajouter au panier
-      </button>
     </div>
-  </div>
+  </ng-container>
 </div>
